@@ -14,13 +14,13 @@ function Nav() {
         <div className='menu-container'>
 
           <ul>
-            <li><a>HOME</a></li>
-            <li><a>ADVERTISERS</a></li>
-            <li><a>PUBLISHERS</a></li>
-            <li><a>INFLUENCERS</a></li>
-            <li><a>AD FORMATS</a></li>
-            <li><a>BLOG</a></li>
-            <li><a>CONTACT US</a></li>
+            <li><a className='list list-1'>HOME</a></li>
+            <li><a className='list'>ADVERTISERS</a></li>
+            <li><a className='list'>PUBLISHERS</a></li>
+            <li><a className='list'>INFLUENCERS</a></li>
+            <li><a className='list'>AD FORMATS</a></li>
+            <li><a className='list'>BLOG</a></li>
+            <li><a className='list'>CONTACT US</a></li>
    
           </ul>
 
@@ -51,8 +51,8 @@ const StyledNav= styled.nav`
 
     .logo{
       font-size: 1.5rem;
-      font-family: "Lobster", cursive;
-      font-weight: lighter;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 700;
   }
 
     p{
@@ -70,6 +70,8 @@ const StyledNav= styled.nav`
 
     display: flex;
     justify-content: space-between;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
 
 
     ul{
@@ -79,14 +81,24 @@ const StyledNav= styled.nav`
       list-style: none;
       justify-content: space-between;
 
+     
+
       li{
-      font-size: 0.5rem;
-      cursor: pointer;
-      a{
+        cursor: pointer;
+
+        .list{
         font-size: 0.8rem;
         color: #644F9C;
         text-decoration: none;
+
+       }
+       .list-1{
+         color: #FF6F00;
+       }
+
       }
+
+      
      }
     }
 
@@ -119,7 +131,7 @@ const StyledNav= styled.nav`
     }
 
 
-  }
+  
 
   
  
