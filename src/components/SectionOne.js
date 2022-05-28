@@ -127,6 +127,7 @@ const SectionStyle= styled.div`
     display: flex;
     justify-content: center;
     gap: 4rem;
+   
 
       button{
           height: 1.8rem;
@@ -135,6 +136,7 @@ const SectionStyle= styled.div`
           background: #644F9C;
           border: none;
           border-radius: 13px;
+          box-shadow: 5px 10px 18px #888888;
       }
 
    }
