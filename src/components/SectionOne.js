@@ -8,7 +8,7 @@ function SectionOne() {
   return (
     <SectionStyle>
         <div className='container-1'>
-            <div className='border'></div>
+          <div className='border'></div>
             <div className='text'>
               <h2> AVAILABLE FOR EVERYONE </h2>
               <h4>Here will be a text</h4>
@@ -31,10 +31,16 @@ function SectionOne() {
            
         </div>
 
-        <div>
-            <p>text 1</p>
-            <p>text 2</p>
-            <p>text 3</p>
+        <div className='text-container'>
+            <p>Text 1</p>
+            <p>Text 2</p>
+            <p>Text 3</p>
+        </div>
+
+        <div className='btn-container'>
+            <button>Hello 1</button>
+            <button>Hello 2</button>
+            <button>Hello 3</button>
         </div>
     </SectionStyle>
   )
@@ -51,27 +57,32 @@ const SectionStyle= styled.div`
      display: flex;
 
     .border{
-     border-top: 1px dotted;
-     width: 30rem;
-     position: relative;
+     border-bottom: 1px dotted;
+     width: 38rem;
+     height: 2rem;
+     /* position: relative; */
      
     }
     h2{
-
-        position: absolute;
-        top: 90vh;
-        left: 33.5rem;
+          width: 18rem;
         color: #644F9C;
 
     }
-    h4{
-        margin-left: 6rem;
-    }
+    .text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      font-weight: 500;
+      margin-left: 4rem;
+      
+  }
 
     .border-1{
-        border-top: 1px dotted;
-        width: 31rem;
-        margin-left: 9rem;
+        border-bottom: 1px dotted;
+        width: 38rem;
+        height: 2rem;
+        margin-left: 2rem;
 
     }
 
@@ -80,7 +91,7 @@ const SectionStyle= styled.div`
   .container-2{
       margin-top: 8rem;
       display: flex;
-      gap: 2rem;
+      gap: 5rem;
       justify-content: center;
   }
 
@@ -101,6 +112,32 @@ const SectionStyle= styled.div`
       color: #644F9C;
   }
 
+  
+
+  .text-container{
+      display: flex;
+      justify-content: center;
+      font-weight: 500;
+      gap: 10rem;
+    
+  }
+
+
+   .btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+      button{
+          height: 1.8rem;
+          width: 9rem;
+          color: white;
+          background: #644F9C;
+          border: none;
+          border-radius: 13px;
+      }
+
+   }
 
  
 
